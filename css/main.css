@@ -27,7 +27,9 @@ body {
   font-family: 'Proxima Nova', "Arial", sans-serif;
   color: var(--body-font);
   font-size: 1rem;
-  background: var(--body-background);
+  background-image: url("../img/canvas_0.25_op.png");
+  /*background: var(--body-background);*/
+
 }
 
 p, ul, li, table, tr, td, dd, dt {
@@ -104,6 +106,7 @@ h3:after {
 #projects-div .card {
   margin-bottom: 2rem;
   cursor: pointer;
+  /* padding: 50px; */
 }
 
 #projects-div .card-body {
@@ -294,7 +297,8 @@ h3:after {
 #page-footer {
   margin-top: 5rem;
   background: var(--footer-slate);
-  padding: 2rem 0 1.5rem;
+  padding: 1rem 0 0;
+  /*padding: 2rem 0 1.5rem;*/
 }
 
 blockquote,

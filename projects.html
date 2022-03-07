@@ -37,12 +37,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
 
   <!-- FontAwesome icon include -->
-  <script src="https://kit.fontawesome.com/b730292a05.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/d1ff2d01c2.js" crossorigin="anonymous"></script>
 
   <!-- Main local styles -->
   <link rel="stylesheet" href="css/main.css">
 
-  <title>Jane Smith, PhD</title>
+  <title>Anton Povzner, PhD</title>
 
 </head>
 
@@ -56,11 +56,12 @@
 
     <div class="row mx-3">
       <div class="col-sm-12">
-        <h1>Projects</h1>
-        <p>My recent work has involved {{things I've done}}.</p>
+        <h1>Art</h1>
+        <p>I've been creating and crafting things of one kind or another for much of my life. The more memorable of those have nearly always been both conceived and delivered as gifts, and hence have never accumulated in one place.</p>
       </div>
+    
       <!-- col-sm-12 -->
-
+<!-- search box
       <div class="col-sm-10 offset-sm-1">
         <form id="search-box">
           <div class="form-group">
@@ -75,12 +76,13 @@
             </div>
           </div>
         </form>
-      </div>
+      </div> -->
       <!-- .col-sm-8 -->
-
+      
+      <!-- Filter buttons
       <div class="col-sm-10 offset-sm-1 text-center" id="filter-buttons">
 
-        <!-- Filter buttons -->
+        
         <button id="all" class="btn btn-sm btn-primary mr-3 active">
           All
         </button>
@@ -98,7 +100,7 @@
         </button>
 
 
-      </div>
+      </div> -->
       <!-- col-sm-10 -->
     </div>
     <!-- .row -->
@@ -106,21 +108,263 @@
     <div class="row" id="projects-div">
 
       <!-- Write the cards into the page -->
-      <script id="all-the-projects" type="text/template">
+      <!-- <script id="all-the-projects" type="text/template"> -->
 
-        {{#projects}}
-          <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="card shadow-sm {{{type}}}" data-url="{{{link}}}">
-              <img src="{{{image}}}" class="card-img-top" alt="...">
-              <div class="card-body border-top" data-resource-type="{{{type}}}">
-                <p class="text-center card-action"><span>{{{icon}}}</span></p>
-                <h5 class="project-title">{{name}}</h5>
-                {{description}}
-              </div>
+        <!-- {{#projects}} -->
+        <!-- <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}" data-url="{{{link}}}">
+            <img src="{{{image}}}" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">name2</h5>
+              desc2
             </div>
           </div>
-        {{/projects}}
-      </script>
+        </div> -->
+
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="./img/projects/cross1.jpg" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">Riverside Church cross</h5>
+              <p>A cross put together from reclaimed pallet planks, nailed together and shaped with a circular saw.</p> <p>May-October 2021; about 7' and 200lb.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="./img/projects/Anila-book1.jpg" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">Hollowed-book purse</h5>
+              <p>A fancy edition of Gulliver's Travels remade into a fancy handbag for a Jonathan Swift fan.</p> <p>2018, for Anila.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="./img/projects/Beth-book1.jpg" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">Book-tree</h5>
+              <p>Paper arrangement: a coiled wire tree covered in paper strips set on a book with a dremel-shaped slope, with a paper bench and swing, and a brass watch movement in place of a sun.</p> <p>2018, for Beth.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="./img/projects/flowers1.jpg" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">Cutlery flowers</h5>
+              <p>Metal cutlery heated, bent, wound & glued together into flowers.</p> <p>2018, for Stacy.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="./img/projects/preachbook1.jpg" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">Sermon-covers</h5>
+              <p>Wire base looped with thread, ornamenting a pastor's sermon-booklet.</p> <p>For Heather, 2018.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="./img/projects/Daniela-tree1.jpg" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">Framed tree</h5>
+              <p>A coiled wire tree set in/out of a picture frame, with miniature wire outdoor-furniture in its presumed shade.</p> <p>2017, for Daniela.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="./img/projects/Leona-moth1.jpg" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">Urania moth</h5>
+              <p>Thread wound over metal wire frame, modeled on a Urania moth.</p> <p>2016, for Leona.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="./img/projects/Tamar-tree1.jpg" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">Shard tree</h5>
+              <p>Coiled wire and pretty crystals shaped into a more figurative tree than my usual ones.</p> <p>For Tamar, 2016.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="./img/projects/Nitzan-tree.jpg" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">Willow tree</h5>
+              <p>Coiled wire and stone beads tree set on a rock; went way over-ambitious on that one--possibly as much as a thousand of the tiny stone-leaves there.</p> <p>2012, for Nitzan.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="./img/projects/Tanya-moth1.JPG" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">Red fox moth</h5>
+              <p>Wire frame wrapped with thread and fuzzy yarn.</p> <p>For Tanya, 2012.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="./img/projects/Margalit-butterfly1.jpg" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">Pop-up butterfly</h5>
+              <p>Wire, screw, metal cigarette box. A cable system folded the flower down when the lid closed and hauled it back straight when opened, though it couldn't close all the way, and the mechanism wore out soon enough so I eventually just fixed it in the open position.</p> <p>2011, for Margalit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="./img/projects/rabbit1.jpg" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">Bony rabbit</h5>
+              <p>Articulated rabbit skeleton set on a tree base next to a sheep skull. Its tiny wrists were especially a bear to put together--definitely inspired a respect for just how exquisitely crafted we all are.</p> <p>2011.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="./img/projects/broken1.jpg" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">Broken</h5>
+              <p>About as close as I've ever gotten to concept art, a car-victim jackal skull set by broken glass.</p> <p>2010.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="./img/projects/Mom-tree1.JPG" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">Late tree</h5>
+              <p>Coiled wire and stone beads tree set on a rock; took a long break in the middle of that project so it was technically several years in the making.</p> <p>Finished in 2010, for Mom.</p>
+            </div>
+          </div>
+        </div>        
+        
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="./img/projects/turtle1.jpg" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">Turtle</h5>
+              <p>Sea turtle skull, sea shells on a wire frame, and barbed-wire flippers mounted with counterweights for a gentle bobbing motion. Originally conceived as a present for Dafi, but I eventually realized that there's a size limit to acceptable gifts; Dafi got a bobble-head cat skull instead.</p> <p>2010, for Dafi. </p>              
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="./img/projects/Masha-dragonfly1.jpg" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">Dragonfly</h5>
+              <p>An antique sextant as a setting for a wire-crafted dragonfly.</p> <p>2007, for Masha.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="{{{image}}}" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">name2</h5>
+              desc2
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="{{{image}}}" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">name2</h5>
+              desc2
+            </div>
+          </div>
+        </div>        
+        
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="{{{image}}}" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">name2</h5>
+              desc2
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="{{{image}}}" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">name2</h5>
+              desc2
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="{{{image}}}" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">name2</h5>
+              desc2
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card shadow-sm {{{type}}}">
+            <img src="{{{image}}}" class="card-img-top" alt="...">
+            <div class="card-body border-top" data-resource-type="{{{type}}}">
+              <p class="text-center card-action"></p>
+              <h5 class="project-title">name2</h5>
+              desc2
+            </div>
+          </div>
+        </div>
+
+        <!-- {{/projects}} -->
+      <!-- </script> -->
 
     </div>
     <!-- .row -->
@@ -134,21 +378,6 @@
   <!-- Back to top button -->
   <a role="button" id="back-to-top" class="btn scroll-link" href="#top"><i class="fa fa-fw fa-2x fa-angle-up" aria-hidden="true"></i></a>
 
-  <div class="modal fade" id="modal-map-to-office" tabindex="-1" role="dialog" aria-labelledby="office-map-modal-label" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="office-map-modal-label">Map to my office</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img class="image-fluid dx-auto" src="img/map-to-my-office.png" alt="map to my office">
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- jquery JS minified -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
